@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio · PetCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- ===== Encabezado común ===== -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="inicio.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg>PETCARE</a>
+    <form class="search" action="resultados.html" role="search">
+      <label for="q" class="sr-only" hidden>Buscar</label>
+      <input id="q" name="q" type="search" placeholder="Buscar servicios para tu mascota…">
+      <select id="cat" name="cat" aria-label="Categoría">
+        <option>Categoría</option>
+        <option>Veterinaria</option>
+        <option>Peluquería</option>
+        <option>Paseo</option>
+        <option>Cuidado temporal</option>
+      </select>
+    </form>
+    <div class="top-actions">
+      <a class="icon-btn" href="#" title="Ayuda" aria-label="Ayuda">?</a>
+      <div class="user-menu">
+        <button type="button" aria-haspopup="true" aria-label="Menú de usuario"><span class="avatar">AB</span><span aria-hidden="true">▾</span></button>
+        <nav class="dropdown">
+          <a href="inicio.html">Inicio</a><a href="mis-solicitudes.html">Mis solicitudes</a>
+          <a href="login.html">Cerrar sesión</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- Banner / carrusel estático -->
+  <section class="banner" aria-label="Destacados">
+    <div class="text">
+      <span class="eyebrow">Hola, Andrea</span>
+      <h1>¿Qué necesita tu mascota hoy?</h1>
+      <p class="muted">Compara precios, horarios y opiniones de proveedores en Barranquilla y reserva sin llamar uno por uno.</p>
+      <div><a class="btn btn-primary" href="resultados.html">Explorar servicios</a></div>
+      <div class="dots" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+    </div>
+    <div class="ph " role="img" aria-label="Imagen destacada"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg></div>
+  </section>
+
+  <section style="display:grid;gap:16px" aria-labelledby="cats">
+    <h2 id="cats">Categorías</h2>
+    <div class="grid-cards">
+    <a class="card cat-card" href="resultados.html">
+      <div class="ph " role="img" aria-label="Veterinaria"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg></div>
+      <div class="body"><h3>Veterinaria</h3><p class="muted" style="font-size:.88rem">Consultas, vacunas y controles</p></div>
+    </a>
+    <a class="card cat-card" href="resultados.html">
+      <div class="ph " role="img" aria-label="Peluquería"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg></div>
+      <div class="body"><h3>Peluquería</h3><p class="muted" style="font-size:.88rem">Baño, corte y uñas</p></div>
+    </a>
+    <a class="card cat-card" href="resultados.html">
+      <div class="ph " role="img" aria-label="Paseo"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg></div>
+      <div class="body"><h3>Paseo</h3><p class="muted" style="font-size:.88rem">Paseadores por horas o paquetes</p></div>
+    </a>
+    <a class="card cat-card" href="resultados.html">
+      <div class="ph " role="img" aria-label="Cuidado temporal"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg></div>
+      <div class="body"><h3>Cuidado temporal</h3><p class="muted" style="font-size:.88rem">Guardería y hospedaje</p></div>
+    </a>
+    </div>
+  </section>
+</main>
+</body>
+</html>

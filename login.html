@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iniciar sesión · PetCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main class="auth">
+  <svg class="blobs" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-20 520 C 160 380, 240 160, 420 110 S 700 60, 760 -20"/>
+    <path d="M650 40 C 820 80, 900 20, 1040 70 S 1180 160, 1220 120"/>
+    <path d="M980 180 C 1040 300, 1120 360, 1100 520 S 1180 700, 1230 760"/>
+    <path d="M200 720 C 360 660, 520 760, 680 700 S 900 640, 980 720"/>
+    <path d="M60 700 C 140 560, 280 520, 330 380"/>
+  </svg>
+  <section class="card auth-card" aria-labelledby="t">
+    <a class="logo" href="login.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg>PETCARE</a>
+    <div class="sub">
+      <h1 id="t" style="font-size:1.4rem">Iniciar sesión</h1>
+      <p class="muted">Encuentra y reserva servicios para tu mascota.</p>
+    </div>
+    <div class="field">
+      <label for="email">Correo electrónico</label>
+      <input class="input" id="email" type="email" placeholder="example@mail.com">
+    </div>
+    <div class="field">
+      <label for="pass">Contraseña</label>
+      <input class="input" id="pass" type="password" value="contraseña">
+    </div>
+    <a class="btn btn-primary btn-block" href="inicio.html">Ingresar</a>
+    <p class="muted" style="text-align:center;font-size:.9rem">¿No tienes cuenta? <a href="registro.html"><strong>Regístrate</strong></a></p>
+    <p class="muted" style="text-align:center;font-size:.8rem">Prototipo: <a href="panel-proveedor.html">entrar como proveedor</a></p>
+  </section>
+</main>
+</body>
+</html>

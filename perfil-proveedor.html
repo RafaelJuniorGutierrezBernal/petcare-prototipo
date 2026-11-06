@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Down Store · PetCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- ===== Encabezado común ===== -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="inicio.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg>PETCARE</a>
+    <form class="search" action="resultados.html" role="search">
+      <label for="q" class="sr-only" hidden>Buscar</label>
+      <input id="q" name="q" type="search" placeholder="Buscar servicios para tu mascota…">
+      <select id="cat" name="cat" aria-label="Categoría">
+        <option>Categoría</option>
+        <option>Veterinaria</option>
+        <option>Peluquería</option>
+        <option>Paseo</option>
+        <option>Cuidado temporal</option>
+      </select>
+    </form>
+    <div class="top-actions">
+      <a class="icon-btn" href="#" title="Ayuda" aria-label="Ayuda">?</a>
+      <div class="user-menu">
+        <button type="button" aria-haspopup="true" aria-label="Menú de usuario"><span class="avatar">AB</span><span aria-hidden="true">▾</span></button>
+        <nav class="dropdown">
+          <a href="inicio.html">Inicio</a><a href="mis-solicitudes.html">Mis solicitudes</a>
+          <a href="login.html">Cerrar sesión</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <a href="resultados.html" class="muted" style="text-decoration:none;font-size:.9rem">← Volver a resultados</a>
+
+  <div class="profile">
+    <!-- Columna izquierda: información -->
+    <section class="card panel" aria-labelledby="pname">
+      <div class="profile-head">
+        <span class="eyebrow">Perfil del proveedor</span>
+        <div class="title">
+          <h1 id="pname">Down Store</h1>
+          <span class="stars" aria-label="3 de 5">★★★☆☆ <b>3,0</b> <span class="muted" style="font-weight:400">(12 opiniones)</span></span>
+        </div>
+        <p class="muted" style="font-size:.88rem">Peluquería · Registrado el 28/02/2026</p>
+      </div>
+      <p>Peluquería canina y felina con más de 5 años en el barrio Riomar. Atendemos con cita previa y usamos productos hipoalergénicos.</p>
+
+      <div class="contact">
+        <div class="ph" role="img" aria-label="Foto de Margarita López"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z"/></svg></div>
+        <div>
+          <p class="eyebrow" style="font-size:.7rem">Profesional que atiende</p>
+          <p style="font-weight:700">Margarita López</p>
+          <p class="muted num" style="font-size:.88rem">+57 315 839 2215 · 601 555 2348</p>
+        </div>
+      </div>
+
+      <dl class="facts">
+        <dt>Dirección</dt><dd>Cra. 51B #79-120, Riomar, Barranquilla</dd>
+        <dt>Horario</dt><dd>Lun–Sáb 8:00–18:00 · Dom 9:00–13:00</dd>
+        <dt>Correo</dt><dd>No especificado</dd>
+      </dl>
+
+      <div style="display:grid;gap:10px">
+        <h2>Servicios</h2>
+        <div class="card table-wrap">
+          <table>
+            <thead><tr><th>Servicio</th><th>Precio</th><th>Tiempo estimado</th></tr></thead>
+            <tbody class="num">
+              <tr><td>Baño medicado</td><td>$20.000</td><td>45 min</td></tr>
+              <tr><td>Baño y corte</td><td>$35.000</td><td>1 h 30 min</td></tr>
+              <tr><td>Corte de uñas</td><td>$10.000</td><td>15 min</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div><a class="btn btn-primary" href="#solicitud">Solicitar</a></div>
+    </section>
+
+    <!-- Columna derecha: ubicación -->
+    <aside class="card panel" aria-labelledby="ubic">
+      <h2 id="ubic">Ubicación</h2>
+      <div class="map" role="img" aria-label="Mapa de ubicación (imagen estática)"><svg viewBox="0 0 300 300" aria-hidden="true">
+  <g stroke="var(--border)" stroke-width="14" fill="none">
+    <path d="M60 0V300M130 0V300M200 0V300M0 90H300M0 210H300"/>
+  </g>
+  <path d="M0 20 L300 280" stroke="var(--surface)" stroke-width="22"/>
+  <path d="M0 20 L300 280" stroke="var(--border)" stroke-width="2" stroke-dasharray="8 8"/>
+  <g transform="translate(165 120)">
+    <path d="M0 -30 C-16 -30 -24 -18 -24 -6 C-24 12 0 30 0 30 C0 30 24 12 24 -6 C24 -18 16 -30 0 -30Z" fill="var(--primary)"/>
+    <circle cx="0" cy="-7" r="8" fill="var(--surface)"/>
+  </g>
+</svg></div>
+      <p class="muted" style="font-size:.85rem">Mapa de referencia. El mapa interactivo queda fuera del MVP.</p>
+    </aside>
+  </div>
+
+  <!-- Opiniones -->
+  <section class="card panel" aria-labelledby="ops">
+    <h2 id="ops">Opiniones</h2>
+    <div>
+      <article class="review">
+        <header><strong>Laura P.</strong><span class="stars">★★★★☆</span><span class="muted" style="font-size:.82rem">30/10/2026</span></header>
+        <p>Buen baño y trato amable. La espera fue de 15 minutos más de lo que dijeron.</p>
+      </article>
+      <article class="review">
+        <header><strong>Carlos M.</strong><span class="stars">★★☆☆☆</span><span class="muted" style="font-size:.82rem">18/10/2026</span></header>
+        <p>Me atendieron tarde aunque tenía cita.</p>
+      </article>
+      <article class="review">
+        <header><strong>Daniela R.</strong><span class="stars">★★★☆☆</span><span class="muted" style="font-size:.82rem">02/10/2026</span></header>
+        <p>El lugar es limpio y Margarita conoce bien a los perros nerviosos.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<!-- ===== Modal: Solicitud de reserva (CSS :target) ===== -->
+<div class="modal" id="solicitud" role="dialog" aria-modal="true" aria-labelledby="sol-t">
+  <div class="dialog">
+    <header><h2 id="sol-t">Solicitud</h2><a class="close" href="#" aria-label="Cerrar">×</a></header>
+    <p class="muted" style="font-size:.9rem">Down Store · Margarita López</p>
+    <div class="field">
+      <label for="svc">Servicio</label>
+      <select class="select" id="svc"><option>Baño medicado – $20.000</option><option>Baño y corte – $35.000</option><option>Corte de uñas – $10.000</option></select>
+    </div>
+    <div class="row-2">
+      <div class="field"><label for="fecha">Fecha</label><input class="input num" id="fecha" type="text" value="15/11/2026"></div>
+      <div class="field"><label for="hora">Hora</label>
+        <select class="select num" id="hora"><option>14:20</option><option>15:00</option><option>16:30</option></select></div>
+    </div>
+    <small class="muted">Solo se muestran horarios disponibles. El sábado 14/11 está lleno.</small>
+    <div class="field"><label for="mascota">Nombre de la mascota</label><input class="input" id="mascota" type="text" value="Toby"></div>
+    <div class="field"><label for="msg">Mensaje (opcional)</label><textarea class="textarea" id="msg" placeholder="Ej.: es nervioso con el secador"></textarea></div>
+    <a class="btn btn-primary btn-block" href="mis-solicitudes.html">Enviar</a>
+  </div>
+</div>
+</body>
+</html>

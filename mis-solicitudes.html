@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mis solicitudes · PetCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- ===== Encabezado común ===== -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="inicio.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg>PETCARE</a>
+    <form class="search" action="resultados.html" role="search">
+      <label for="q" class="sr-only" hidden>Buscar</label>
+      <input id="q" name="q" type="search" placeholder="Buscar servicios para tu mascota…">
+      <select id="cat" name="cat" aria-label="Categoría">
+        <option>Categoría</option>
+        <option>Veterinaria</option>
+        <option>Peluquería</option>
+        <option>Paseo</option>
+        <option>Cuidado temporal</option>
+      </select>
+    </form>
+    <div class="top-actions">
+      <a class="icon-btn" href="#" title="Ayuda" aria-label="Ayuda">?</a>
+      <div class="user-menu">
+        <button type="button" aria-haspopup="true" aria-label="Menú de usuario"><span class="avatar">AB</span><span aria-hidden="true">▾</span></button>
+        <nav class="dropdown">
+          <a href="inicio.html">Inicio</a><a href="mis-solicitudes.html">Mis solicitudes</a>
+          <a href="login.html">Cerrar sesión</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="notice" role="status">✓ Solicitud enviada correctamente</div>
+  <h1>Mis solicitudes</h1>
+
+  <div class="card table-wrap">
+    <table class="stack-table">
+      <thead><tr><th>Fecha</th><th>Hora</th><th>Proveedor</th><th>Servicio</th><th>Estado</th><th></th></tr></thead>
+      <tbody class="num">
+        <tr>
+          <td data-label="Fecha">15/11/2026</td><td data-label="Hora">14:20</td><td data-label="Proveedor">Down Store</td>
+          <td data-label="Servicio">Baño medicado</td><td data-label="Estado"><span class="badge badge-wait">Pendiente</span></td><td></td>
+        </tr>
+        <tr>
+          <td data-label="Fecha">28/10/2026</td><td data-label="Hora">10:00</td><td data-label="Proveedor">Huellitas Spa</td>
+          <td data-label="Servicio">Baño completo</td><td data-label="Estado"><span class="badge badge-ok">Aceptada</span></td>
+          <td><a class="btn btn-ghost btn-sm" href="#calificar">Calificar</a></td>
+        </tr>
+        <tr>
+          <td data-label="Fecha">20/10/2026</td><td data-label="Hora">17:30</td><td data-label="Proveedor">Clínica Vet Norte</td>
+          <td data-label="Servicio">Consulta general</td><td data-label="Estado"><span class="badge badge-no">Rechazada</span></td>
+          <td><a class="btn btn-ghost btn-sm" href="resultados.html">Buscar otro servicio</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<!-- ===== Modal: Calificar servicio (CSS :target) ===== -->
+<div class="modal" id="calificar" role="dialog" aria-modal="true" aria-labelledby="cal-t">
+  <div class="dialog">
+    <header><h2 id="cal-t">Calificar servicio</h2><a class="close" href="#" aria-label="Cerrar">×</a></header>
+    <p class="muted" style="font-size:.9rem">Huellitas Spa · Baño completo · 28/10/2026</p>
+    <div class="rating-pick" aria-label="4 de 5 estrellas"><span class="on">★</span><span class="on">★</span><span class="on">★</span><span class="on">★</span><span>★</span></div>
+    <div class="field">
+      <label for="com">Comentario (opcional)</label>
+      <textarea class="textarea" id="com">Muy puntuales y Toby quedó feliz.</textarea>
+      <small>Máximo 250 caracteres.</small>
+    </div>
+    <a class="btn btn-primary btn-block" href="#">Enviar calificación</a>
+  </div>
+</div>
+</body>
+</html>

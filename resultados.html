@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultados · PetCare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- ===== Encabezado común ===== -->
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="inicio.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg>PETCARE</a>
+    <form class="search" action="resultados.html" role="search">
+      <label for="q" class="sr-only" hidden>Buscar</label>
+      <input id="q" name="q" type="search" placeholder="Buscar servicios para tu mascota…">
+      <select id="cat" name="cat" aria-label="Categoría">
+        <option>Categoría</option>
+        <option>Veterinaria</option>
+        <option>Peluquería</option>
+        <option>Paseo</option>
+        <option>Cuidado temporal</option>
+      </select>
+    </form>
+    <div class="top-actions">
+      <a class="icon-btn" href="#" title="Ayuda" aria-label="Ayuda">?</a>
+      <div class="user-menu">
+        <button type="button" aria-haspopup="true" aria-label="Menú de usuario"><span class="avatar">AB</span><span aria-hidden="true">▾</span></button>
+        <nav class="dropdown">
+          <a href="inicio.html">Inicio</a><a href="mis-solicitudes.html">Mis solicitudes</a>
+          <a href="login.html">Cerrar sesión</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div style="display:grid;gap:6px">
+    <span class="eyebrow">Peluquería</span>
+    <h1>Resultados de búsqueda: “baño para perro”</h1>
+    <p class="muted">6 servicios encontrados</p>
+  </div>
+
+  <div class="toolbar">
+    <div class="filters">
+      <div class="field">
+        <label for="ubic">Ubicación</label>
+        <select class="select" id="ubic"><option>Barranquilla – Todos los barrios</option><option>El Prado</option><option>Riomar</option><option>Alto Prado</option></select>
+      </div>
+      <div class="field">
+        <label for="cat2">Categoría</label>
+        <select class="select" id="cat2"><option>Peluquería</option><option>Veterinaria</option><option>Paseo</option><option>Cuidado temporal</option></select>
+      </div>
+    </div>
+    <div class="field">
+      <label for="orden">Ordenar por</label>
+      <select class="select" id="orden"><option>Precio: menor a mayor</option><option>Precio: mayor a menor</option><option>Mejor calificados</option></select>
+    </div>
+  </div>
+
+  <div class="grid-cards">
+    <a class="card result-card" href="perfil-proveedor.html">
+      <div class="store"><span>Fank Store</span><span class="stars" aria-label="4,0 de 5">★ <b>4,0</b></span></div>
+      <div class="ph " role="img" aria-label="Corte de uñas"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg></div>
+      <div class="body">
+        <h3>Corte de uñas</h3>
+        <p class="muted" style="font-size:.85rem">Barranquilla · Alto Prado</p>
+        <p class="price num">$15.000</p>
+      </div>
+    </a>
+    <a class="card result-card" href="perfil-proveedor.html">
+      <div class="store"><span>Can Glamour</span><span class="stars" aria-label="3,4 de 5">★ <b>3,4</b></span></div>
+      <div class="ph " role="img" aria-label="Baño básico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg></div>
+      <div class="body">
+        <h3>Baño básico</h3>
+        <p class="muted" style="font-size:.85rem">Barranquilla · Las Delicias</p>
+        <p class="price num">$18.000</p>
+      </div>
+    </a>
+    <a class="card result-card" href="perfil-proveedor.html">
+      <div class="store"><span>Down Store</span><span class="stars" aria-label="3,0 de 5">★ <b>3,0</b></span></div>
+      <div class="ph " role="img" aria-label="Baño medicado"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg></div>
+      <div class="body">
+        <h3>Baño medicado</h3>
+        <p class="muted" style="font-size:.85rem">Barranquilla · Riomar</p>
+        <p class="price num">$20.000</p>
+      </div>
+    </a>
+    <a class="card result-card" href="perfil-proveedor.html">
+      <div class="store"><span>Pet Store</span><span class="stars" aria-label="4,5 de 5">★ <b>4,5</b></span></div>
+      <div class="ph " role="img" aria-label="Baño y corte"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg></div>
+      <div class="body">
+        <h3>Baño y corte</h3>
+        <p class="muted" style="font-size:.85rem">Barranquilla · El Prado</p>
+        <p class="price num">$23.000</p>
+      </div>
+    </a>
+    <a class="card result-card" href="perfil-proveedor.html">
+      <div class="store"><span>Peludos & Co.</span><span class="stars" aria-label="4,2 de 5">★ <b>4,2</b></span></div>
+      <div class="ph " role="img" aria-label="Deslanado"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg></div>
+      <div class="body">
+        <h3>Deslanado</h3>
+        <p class="muted" style="font-size:.85rem">Barranquilla · Boston</p>
+        <p class="price num">$38.000</p>
+      </div>
+    </a>
+    <a class="card result-card" href="perfil-proveedor.html">
+      <div class="store"><span>Huellitas Spa</span><span class="stars" aria-label="4,8 de 5">★ <b>4,8</b></span></div>
+      <div class="ph " role="img" aria-label="Baño completo raza grande"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="10" r="2.2"/><circle cx="9" cy="5.5" r="2.2"/><circle cx="15" cy="5.5" r="2.2"/><circle cx="19" cy="10" r="2.2"/><path d="M12 11c-3.3 0-6 3.6-6 6.2 0 1.8 1.4 2.8 3 2.8 1.2 0 2-.6 3-.6s1.8.6 3 .6c1.6 0 3-1 3-2.8C18 14.6 15.3 11 12 11z"/></svg></div>
+      <div class="body">
+        <h3>Baño completo raza grande</h3>
+        <p class="muted" style="font-size:.85rem">Barranquilla · Villa Country</p>
+        <p class="price num">$45.000</p>
+      </div>
+    </a>
+  </div>
+
+  <!-- Estado vacío (se muestra cuando la búsqueda no tiene resultados) -->
+  <div class="empty">
+    <strong>Ejemplo de estado vacío:</strong> No hay servicios disponibles para esta búsqueda.
+  </div>
+</main>
+</body>
+</html>
